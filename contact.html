@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <script src="dist/scripts/vendor.min.js"></script>
+      
+      <meta charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="dist/styles/vendor.min.css" />
+      <link rel="stylesheet" type="text/css" href="dist/styles/main.min.css" />
+      <script type="text/javascript" src="js/client.js"></script>
+      <script type="text/javascript" src="js/ajaxupload.js"></script>
+      
+      <title>Кондитерская с доставкой | Контакты</title>
+      <meta name="HandheldFriendly" content="true">
+      <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+      <meta name="theme-color" content="#000000">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      
+   </head>
+   <body  data-template="contacts">
+    
+      <div class="wrapper">
+         <div class="wrapper-in">
+            <!-- .header -->
+            <header class="header">
+               <div class="container">
+                  <div class="header_in">
+                     <div class="header__sup">
+                        <div class="header__left">
+                           <div class="level-menu-toggle-wrapper">
+                              <div class="level-menu-toggle"></div>
+                           </div>
+                           <div class="phone__block">
+                              <div class="phone">
+                                 <i class="icon icon-phone"></i>
+                                 <span class="num"><a href="tel:+77756325174">+7 (775) 632 51 74</a></span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="header__center">
+                           <div class="logo">
+                              <a href="index.html">
+                              <img src="logo.png" width="200px" alt="" class="show-lg show-sm show-md">
+                              <img src="logo.png" width="200px" alt="" class="show-xs">
+                              </a>
+                           </div>
+                        </div>
+                        <div class="header__right">
+                           <a href="korzina" class="cart__info_block">
+                              <div class="cart__informer">
+                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" width="50px">
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <nav class="nav-main">
+                        <div class="container">
+                           <ul class="list-inline">
+                              <li><a href="o_nas.html">About us</a></li>
+                              <li><a href="index.html#menu">Menu</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </header>
+
+            <main class="content">
+               <div class="page page--contacts">
+                  <div class="container">
+                     <div class="contacts">
+                        <div class="section__title">
+                           <h1>Contact</h1>
+                        </div>
+                        <div class="contacts__list">
+                           <img src=""/>
+                           <div class="list__item">
+                              <div class="item__title">
+                                 <span>Adress</span>
+                              </div>
+                              <div class="item__desc">Arnau 8, Nur-Sultan</div>
+                           </div>
+                           <img src=""/>
+                           <div class="list__item">
+                              <div class="item__title">
+                                 <span>Phone</span>
+                              </div>
+                              <div class="item__desc">+7 (775) 632 51 74</div>
+                           </div>
+                           <img src=""/>
+                           <div class="list__item">
+                              <div class="item__title">
+                                 <span>Mail</span>
+                              </div>
+                              <div class="item__desc">info@wost.kz</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </main>
+            <!-- end .content -->
+            <div class="modal fade delivery-map" tabindex="-1" role="dialog">
+               <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  </div>
+                  <div class="modal-content">
+                     <div class="delivery-head">
+                        <div class="row">
+                           <div class="col-lg-6">
+                              <div class="cart-page">
+                                 <h3 class="modal--title">Адрес доставки</h3>
+                                 <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Например: ул. Макатаева, д. 28, стр. 1">
+                                    <button class="btn btn-primary btn-input" data-dismiss="modal" disabled>Хорошо</button>
+                                 </div>
+                                 <small>Так же вы можете выбрать свой адрес на карте.</small>
+                              </div>
+                              <div class="not-cart-page">
+                                 <h3 class="modal--title">Зона доставки</h3>
+                                 <big>Отметьте на карте свой адрес, чтобы узнать время и стоимость доставки.</big>
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="list-item">
+                                 <div class="item">
+                                    <div class="item--title">Время доставки</div>
+                                    <img src="dist/images/icon-clock.svg" alt=""><span class="delivery-time">-</span> минут
+                                 </div>
+                                 <div class="item">
+                                    <div class="item--title">Стоимость доставки</div>
+                                    <img src="dist/images/icon-currency-tenge.svg" alt=""><span class="delivery-price">-</span> тенге
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="map-block">
+                        <div id="map"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- .footer -->
+         <footer class="footer">
+            <div class="container">
+               <div class="footer_in">
+                  <div class="footer__logo">
+                     <a href=""><img src="logo.png" width="200px" alt=""></a>
+                  </div>
+                  <div class="copyright"> © 2022 | ТОО "WORLD OF SWEET TOOTH" </div>
+                  <div class="social__list">
+                     <ul class="list-inline">
+                        <li><a href="#"><i class="icon icon-ins"></i></a></li>
+                     </ul>
+                  </div>
+                  <div class="made"> г.Нур-Султан, ул.Арнау 8 </div>
+               </div>
+            </div>
+         </footer>
+         <!-- end .footer -->
+      </div>
+      <!-- end .wrapper -->
+      
+      <script type="text/javascript" src="dist/scripts/main.min.js"></script>
+   </body>
+</html>
